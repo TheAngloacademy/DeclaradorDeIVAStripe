@@ -43,7 +43,7 @@ STRIPE_API_KEY = "sk_live_..."
 Ejecuta el script con:
 
 ```bash
-python main.py
+python StripeData.py
 ```
 
 El script generará automáticamente una carpeta `IVA_2025` (o del año actual), con subcarpetas por trimestre, mes y los archivos PDF y Excel correspondientes.
