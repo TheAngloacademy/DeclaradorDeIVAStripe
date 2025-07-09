@@ -14,3 +14,51 @@ Este script permite descargar todas las facturas del año actual desde Stripe, o
    ```bash
    git clone https://github.com/TheAngloacademy/DeclaradorDeIVAStripe.git
    cd DeclaradorDeIVAStripe
+Instala las dependencias:
+
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+(Opcional) Crea un entorno virtual:
+
+bash
+Copiar
+Editar
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+⚙️ Configuración
+Edita la variable STRIPE_API_KEY en el script para colocar tu clave secreta de Stripe:
+
+python
+Copiar
+Editar
+STRIPE_API_KEY = "sk_live_..."
+🚀 Uso
+Ejecuta el script con:
+
+bash
+Copiar
+Editar
+python main.py
+El script generará automáticamente una carpeta IVA_2025 (o del año actual), con subcarpetas por trimestre, mes y los archivos PDF y Excel correspondientes.
+
+📁 Estructura de salida
+yaml
+Copiar
+Editar
+IVA_2025/
+├── 2025/
+│   ├── T1/
+│   │   ├── 01/
+│   │   │   ├── facturas_pdf/
+│   │   │   └── resumen_excel/
+│   │   └── resumen_excel/
+│   └── resumen_excel/
+└── ...
+🧾 Archivos generados
+Facturas individuales en PDF
+
+Resúmenes mensuales y trimestrales en .xlsx y .csv
+
+Un resumen anual completo
