@@ -67,3 +67,8 @@ IVA_2025/
 * Facturas individuales en PDF
 * Resúmenes mensuales y trimestrales en `.xlsx` y `.csv`
 * Un resumen anual completo
+
+* ## 📄 Licencia
+
+Este proyecto está licenciado bajo los términos de la [Licencia MIT](LICENSE).
+
